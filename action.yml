@@ -1,0 +1,13 @@
+name: 'Deploy to quickee.host'
+description: 'This action deploys site to quickee.host'
+inputs:
+  api-key:
+    description: 'API key'
+    required: true
+    default: ''
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'index.js'
