@@ -5,6 +5,10 @@ inputs:
     description: 'API key'
     required: true
     default: ''
+  folder-name:
+    description: 'Folder to upload'
+    required: false
+    default: './'
 outputs:
   time: # id of output
     description: 'The time we greeted you'

@@ -21,6 +21,7 @@ async function main() {
         //const response = await uploadFile(url, formsMap, fileFormsMap);
         //todo
         //todo versioning should be done
+        //todo support for ignored files or subfolders
         const url = "https://api.quickee.host/publicApi/github/action/upload"
         const response = await upload( apiKey, folderName, defaultFolder, null, url );
         core.setOutput( "time", time );
