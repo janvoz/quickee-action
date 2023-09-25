@@ -8,10 +8,15 @@ async function main() {
         let apiKey = core.getInput( 'api-key' );
         apiKey = "prdel"
         console.log( `API key is: ${apiKey}` );
-        const time = ( new Date() ).toTimeString();
+        let folderName = core.getInput( 'folder-name' );
         const defaultFolder = "./";
+        if ( folderName ) {
+            console.log( `Folder to upload is: ${apiKey}` );
+        } else {
+            console.log( `Folder to upload is empty, using default folder: ${defaultFolder}` );
+        }
+        const time = ( new Date() ).toTimeString();
        // const folderName = "./"
-        const folderName = null;
         //call action
         //const response = await uploadFile(url, formsMap, fileFormsMap);
         //todo
