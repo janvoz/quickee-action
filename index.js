@@ -11,7 +11,7 @@ async function main() {
         let folderName = core.getInput( 'folder-name' );
         const defaultFolder = "./";
         if ( folderName ) {
-            console.log( `Folder to upload is: ${apiKey}` );
+            console.log( `Folder to upload is: ${folderName}` );
         } else {
             console.log( `Folder to upload is empty, using default folder: ${defaultFolder}` );
         }
